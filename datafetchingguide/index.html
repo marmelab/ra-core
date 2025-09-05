@@ -150,7 +150,7 @@
 <li><strong>Optimistic Updates</strong>: When a user deletes or updates a record, ra-core immediately updates the local cache to reflect the change, providing instant UI feedback. The server request follows, and if it fails, ra-core reverts the local data and notifies the user.</li>
 <li><strong>Auto Refresh</strong>: Ra-core invalidates dependent queries after a successful mutation. TanStack Query then refetches the necessary data, ensuring the UI remains up-to-date automatically.</li>
 </ul>
-<p>For example, when a user deletes a book in a list, React-admin immediately removes it, making the row disappear. After the API confirms the deletion, React-admin invalidates the list’s cache, refreshes it, and another record appears at the end of the list.</p>
+<p>For example, when a user deletes a book in a list, Ra-core immediately removes it, making the row disappear. After the API confirms the deletion, Ra-core invalidates the list’s cache, refreshes it, and another record appears at the end of the list.</p>
 <video controls autoplay playsinline muted loop width="100%">
   <source src="../img/AutoRefresh.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -220,7 +220,7 @@
 </ul>
 <p>Even on complex pages that aggregate data from multiple resources, Reference components optimize API requests, reducing their number while ensuring users quickly see the data they need.</p>
 <p>Relationship support in ra-core works out of the box with any API that provides foreign keys. No special configuration is required for your API or Data Provider.</p>
-<p>Here is a list of react-admin’s <a href="/ra-core/features/#relationships">relationship components</a>:</p>
+<p>Here is a list of ra-core’s <a href="/ra-core/features/#relationships">relationship components</a>:</p>
 <ul>
 <li><a href="/ra-core/referencefieldbase/"><code dir="auto">&#x3C;ReferenceFieldBase></code></a></li>
 <li><a href="/ra-core/referencearrayfieldbase/"><code dir="auto">&#x3C;ReferenceArrayFieldBase></code></a></li>
